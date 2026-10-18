@@ -3,81 +3,104 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CodeFusion | Páginas web, sistemas y soporte técnico en Puebla</title>
+<title>CodeFusion | Páginas web, sistemas a la medida y soporte técnico en Puebla</title>
 <meta name="description" content="Páginas web, landing pages, sistemas a la medida, tiendas en línea y soporte técnico para negocios y emprendedores en Puebla.">
 <link rel="icon" href="assets/logo-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <header class="top"><div class="wrap">
   <a class="brand" href="#inicio"><img src="assets/logo-icon.png" alt=""><span>CodeFusion</span></a>
-  <nav>
-    <a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#nosotros">Nosotros</a>
-    <a class="pill" href="#contacto">Contacto</a>
+  <nav aria-label="Principal">
+    <a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a>
   </nav>
+  <div class="actions">
+    <button type="button" class="theme" id="theme" aria-label="Cambiar tema">☾</button>
+    <a class="pill" href="https://wa.me/522211810802?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios.%20Los%20contacto%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener">Solicitar asesoría</a>
+  </div>
 </div></header>
 
 <main>
 <section id="inicio" class="hero"><div class="wrap hero-grid">
   <div>
-    <h1>Tu negocio en línea, con herramientas que sí funcionan</h1>
-    <p>Páginas web, sistemas a la medida y soporte técnico para negocios y emprendedores en Puebla.</p>
+    <h1>Páginas web, sistemas y soporte técnico para tu negocio</h1>
+    <p>Ayudamos a negocios y emprendedores de Puebla a tener presencia y herramientas digitales que sí funcionan.</p>
     <div class="ctas">
-      <a class="btn p" href="https://wa.me/522211810802?text=Hola%2C%20me%20interesa%20cotizar%20un%20proyecto%20con%20CodeFusion" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+      <a class="btn p" href="https://wa.me/522211810802?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios.%20Los%20contacto%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener">Solicitar asesoría</a>
       <a class="btn s" href="#servicios">Ver servicios</a>
     </div>
   </div>
   <div class="logo-card"><img src="assets/logo.png" alt="Logo de CodeFusion"></div>
 </div></section>
 
-<section id="servicios" class="alt"><div class="wrap">
-  <h2>Lo que hacemos</h2>
-  <p class="lead">Desde tu primera página hasta el sistema que lleva el control de tu negocio, y el equipo para usarlo.</p>
-  <div class="cols">
-    <div class="panel"><h3>Desarrollo</h3><p class="t">Para que tus clientes te encuentren y tu operación se ordene.</p>
-      <ul>
-        <li>Páginas web y landing pages<small>Presencia clara, rápida y que se ve bien en celular.</small></li>
-        <li>Sistemas a la medida<small>Inventarios, punto de venta (POS) y gestión.</small></li>
-        <li>Tiendas en línea<small>Catálogo, carrito y pedidos listos para vender.</small></li>
-      </ul></div>
-    <div class="panel c2"><h3>Soporte técnico</h3><p class="t">Para que tu equipo siempre esté listo para trabajar.</p>
-      <ul>
-        <li>Mantenimiento a equipo de cómputo<small>Limpieza, revisión y mejoras de rendimiento.</small></li>
-        <li>Instalación de sistema operativo<small>Instalación y configuración desde cero.</small></li>
-        <li>Soporte técnico<small>Ayuda con fallas, programas y configuración.</small></li>
-      </ul></div>
+<div class="marquee" aria-label="Tecnologías con las que trabajamos"><div class="mq" id="mq"></div></div>
+
+<section id="nosotros"><div class="wrap two">
+  <div>
+    <span class="label">Nosotros</span>
+    <h2>Dos desarrolladores, una idea clara</h2>
+    <p class="txt">CodeFusion nació de la unión de dos desarrolladores que quieren ayudar a negocios y emprendedores a tener presencia y herramientas digitales que sí funcionan.</p>
+    <ul class="checks">
+      <li>Webs y sistemas que se usan todos los días.</li>
+      <li>Desarrollo y soporte técnico en un mismo lugar.</li>
+      <li>Tecnologías modernas: rápido, seguro y fácil de usar.</li>
+    </ul>
+    <a class="btn p" href="#contacto">Platiquemos</a>
+  </div>
+  <div class="tiles">
+    <div class="tile rv"><b>2</b><span>Desarrolladores</span></div>
+    <div class="tile rv"><b>6</b><span>Servicios</span></div>
+    <div class="tile rv"><b id="cnt">7</b><span>Proyectos</span></div>
+    <div class="tile rv"><b>100%</b><span>A la medida</span></div>
   </div>
 </div></section>
 
-<section id="proyectos"><div class="wrap">
+<section id="servicios" class="alt"><div class="wrap center">
+  <span class="label">Qué hacemos</span>
+  <h2>Soluciones para que tu negocio se vea y funcione mejor</h2>
+  <p class="lead">Desde tu primera página hasta el sistema que lleva el control de tu negocio, y el equipo para usarlo.</p>
+  <div class="svc" id="svc"></div>
+</div></section>
+
+<section id="porque"><div class="wrap center">
+  <span class="label">Por qué CodeFusion</span>
+  <h2>Desarrollo con enfoque en tu negocio, no solo en código</h2>
+  <div class="why" id="why"></div>
+</div></section>
+
+<section id="proyectos" class="alt"><div class="wrap center">
+  <span class="label">Portafolio</span>
   <h2>Proyectos</h2>
   <p class="lead">Algunos sistemas y apps que hemos construido. Entra a cada uno para ver más y el stack que usamos.</p>
   <div class="arrows"><button type="button" data-dir="-1" aria-label="Anterior">&lsaquo;</button><button type="button" data-dir="1" aria-label="Siguiente">&rsaquo;</button></div>
   <div class="track" id="track" tabindex="0" aria-label="Carrusel de proyectos"></div>
 </div></section>
 
-<section id="nosotros" class="alt about"><div class="wrap">
-  <h2>Dos desarrolladores, una idea clara</h2>
-  <p>CodeFusion nació de la unión de dos desarrolladores que quieren ayudar a negocios y emprendedores a tener presencia y herramientas digitales que sí funcionen.</p>
-  <p>Trabajamos con tecnologías modernas para que tu proyecto sea rápido, seguro y fácil de usar.</p>
-  <div class="stack"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Vue</span><span>React</span></div>
-</div></section>
-
-<section id="contacto" class="contact"><div class="wrap">
+<section id="contacto" class="contact"><div class="wrap center">
+  <span class="label">Contacto</span>
   <h2>¿Tienes un proyecto en mente?</h2>
   <p class="lead">Platiquemos, sin compromiso. Cuéntanos qué necesitas y te respondemos.</p>
   <div class="ctas">
-    <a class="btn p" href="https://wa.me/522211810802?text=Hola%2C%20me%20interesa%20cotizar%20un%20proyecto%20con%20CodeFusion" target="_blank" rel="noopener">WhatsApp +52 221 181 0802</a>
+    <a class="btn p" href="https://wa.me/522211810802?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios.%20Los%20contacto%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener">WhatsApp +52 221 181 0802</a>
     <a class="btn s" href="mailto:codefusionyj@gmail.com">codefusionyj@gmail.com</a>
   </div>
-  <address>Puebla, México</address>
 </div></section>
 </main>
 
-<footer>© 2026 CodeFusion. Puebla, México.</footer>
+<footer><div class="wrap">
+  <div class="fcols">
+    <div><a class="brand" href="#inicio"><img src="assets/logo-icon.png" alt=""><span>CodeFusion</span></a>
+      <p>Páginas web, sistemas a la medida y soporte técnico para negocios y emprendedores.</p></div>
+    <div><h4>Contacto</h4><a href="mailto:codefusionyj@gmail.com">codefusionyj@gmail.com</a><a href="tel:+522211810802">221 181 0802</a><span>Puebla, México</span></div>
+    <div><h4>Links rápidos</h4><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a></div>
+    <div><h4>Síguenos</h4><a href="https://www.instagram.com/codefusiondev/" target="_blank" rel="noopener">Instagram @codefusiondev</a></div>
+  </div>
+  <p class="copy">© 2026 CodeFusion. Todos los derechos reservados.</p>
+</div></footer>
 
 <dialog id="dlg" aria-labelledby="dt">
   <button class="x" type="button" id="dx" aria-label="Cerrar">&times;</button>

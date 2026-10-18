@@ -1,3 +1,14 @@
-Pon aqui las capturas de cada proyecto (ej. pos-1.png, pos-2.png).
-Luego, en js/main.js, busca el arreglo P y agrega las rutas en "m":
-m:["assets/proyectos/pos-1.png","assets/proyectos/pos-2.png"]
+CAPTURAS DE PROYECTOS
+Cada proyecto tiene su carpeta. Pon ahi al menos 5 imagenes numeradas:
+
+  pos/         1.jpg 2.jpg 3.jpg 4.jpg 5.jpg
+  tienda/      1.jpg ... 5.jpg
+  liga/        1.jpg ... 5.jpg
+  clinica/     1.jpg ... 5.jpg
+  hospital/    1.jpg ... 5.jpg
+  mitiendita/  1.jpg ... 5.jpg
+  ecoruta/     1.jpg ... 5.jpg
+
+- Formato recomendado: JPG, 1280x800 px (proporcion 16:10), menos de 300 KB cada una.
+- Si usas PNG o WEBP, cambia EXT en js/main.js (var EXT="jpg").
+- Para mas de 5 imagenes, agrega n:8 (por ejemplo) al proyecto en el arreglo P de js/main.js.
